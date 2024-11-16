@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Nav from './components/hader/nav';
+import './App.css';
+import Nav from './components/navbar/nav'; 
+import Banner from './components/banner/Banner';
+import Container from './container/container';
 
 
 function App() {
-  
-
   return (
     <>
-    <div> <Nav></Nav></div>
       
-      
-      
+
+      <Container> 
+        <Nav /> 
+        <Banner />
+        
+       
+        
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

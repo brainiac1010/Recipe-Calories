@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 
 const nav = () => {
     return (
-        <div className="flex items-center justify-between px-4 py-2 bg-slate-100" >
+        <div className=" flex items-center justify-between p-5" >
             <h1 className='w-[251px] h-[40px] text-2xl font-bold'>Recipe Calories</h1>
             <ul className="hidden md:flex space-x-6 text-lg">
                 <li><a href="#" className="hover:text-blue-500">Home</a></li>
