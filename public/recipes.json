@@ -1,0 +1,86 @@
+[
+    {
+        "recipe_id": 1,
+        "cover": "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+        "recipe_name": "Chicken Stir Fry",
+        "short_description": "A quick and delicious stir fry with chicken and vegetables.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaf",
+            "400 g mushroom"
+        ],
+        "preparing_time": 30,
+        "calories": 320
+    },
+    {
+        "recipe_id": 2,
+        "cover": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "recipe_name": "Beef Tacos",
+        "short_description": "Tasty beef tacos with fresh toppings and a zesty sauce.",
+        "ingredients": [
+            "500 g beef",
+            "100 g cheese",
+            "150 g lettuce",
+            "4 taco shells"
+        ],
+        "preparing_time": 20,
+        "calories": 450
+    },
+    {
+        "recipe_id": 3,
+        "cover": "https://images.unsplash.com/photo-1570968922418-33c712a6a4b6",
+        "recipe_name": "Vegetable Soup",
+        "short_description": "A healthy and warm vegetable soup perfect for the cold days.",
+        "ingredients": [
+            "200 g carrots",
+            "100 g potatoes",
+            "50 g peas",
+            "2 liters water"
+        ],
+        "preparing_time": 40,
+        "calories": 200
+    },
+    {
+        "recipe_id": 4,
+        "cover": "https://images.unsplash.com/photo-1585150214087-eed4f1e9b287",
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Classic Italian pasta with a rich meat sauce.",
+        "ingredients": [
+            "250 g spaghetti",
+            "300 g ground beef",
+            "1 onion",
+            "400 g tomato sauce"
+        ],
+        "preparing_time": 45,
+        "calories": 500
+    },
+    {
+        "recipe_id": 5,
+        "cover": "https://images.unsplash.com/photo-1615752798599-f4b75889a8c3",
+        "recipe_name": "Vegetable Curry",
+        "short_description": "A flavorful vegetarian curry with mixed vegetables.",
+        "ingredients": [
+            "200 g potatoes",
+            "100 g spinach",
+            "1 onion",
+            "200 ml coconut milk"
+        ],
+        "preparing_time": 35,
+        "calories": 350
+    },
+    {
+        "recipe_id": 6,
+        "cover": "https://images.unsplash.com/photo-1604900529525-4d3be478a268",
+        "recipe_name": "Grilled Salmon",
+        "short_description": "A simple and healthy grilled salmon with a lemon glaze.",
+        "ingredients": [
+            "200 g salmon",
+            "1 lemon",
+            "50 g olive oil",
+            "1 tsp garlic powder"
+        ],
+        "preparing_time": 25,
+        "calories": 280
+    }
+]
