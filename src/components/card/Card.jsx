@@ -6,9 +6,9 @@ const Card = ({ card }) => {
   const { recipe_name, cover, short_description, ingredients, preparing_time, calories } = card;
 
   return (
-    <div className="border p-4 rounded-lg shadow-lg ">
+    <div className="border p-4 rounded-lg  shadow-lg ">
       <img
-        className="w-[331px] h-[200px] rounded-lg object-cover"
+        className="w-[331px] ml-2 h-[200px] rounded-lg object-cover"
         src={cover}
         alt={`Cover image of recipe ${recipe_name}`}
       />
