@@ -11,8 +11,8 @@ const Cards = () => {
         .then(data=>setCards(data))
     },[])
     return (
-        <div>
-            
+        <div className="md:w-2/3">
+            <h2 className="text-5xl">Cards:{cards.length} </h2>
         </div>
     );
 };
