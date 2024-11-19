@@ -2,9 +2,9 @@
 
 const countArea = () => {
     return (
-        <div className="md:w-1/3">
+        <div className="md:w-1/3 text-center">
             <h2>
-            Want to cook: 
+            Want to cook : 
             </h2>
         </div>
     );

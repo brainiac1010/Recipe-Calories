@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { IoMdTime } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 
-const Card = ({ card }) => {
+const Card = ({ card,handelAddWantToCook }) => {
   const { recipe_name, cover, short_description, ingredients, preparing_time, calories } = card;
 
   return (
@@ -35,7 +35,9 @@ const Card = ({ card }) => {
         </div>
       </div>
       
-      <button className="bg-green-300 hover:bg-green-400 text-white rounded-full p-4 mt-4 w-full">
+      <button 
+      onClick={()=>handelAddWantToCook()}
+      className="bg-green-300 hover:bg-green-400 text-white rounded-full p-4 mt-4 w-full">
         Want to Cook
       </button>
     </div>

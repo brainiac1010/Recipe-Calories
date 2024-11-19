@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "../card/Card";
 
-const Cards = () => {
+const Cards = ({handelAddWantToCook}) => {
 
     const[cards,setCards]= useState([])
     useEffect(()=>{
@@ -16,7 +16,11 @@ const Cards = () => {
        
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pl-2">
         {cards.map(card => (
-          <Card key={card.id} card={card} />
+          <Card 
+          key={card.id} 
+          card={card} 
+          handelAddWantToCook={handelAddWantToCook}
+          />
         ))}
       </div>
         </div>
