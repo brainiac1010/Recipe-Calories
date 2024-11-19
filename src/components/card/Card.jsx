@@ -36,7 +36,7 @@ const Card = ({ card,handelAddWantToCook }) => {
       </div>
       
       <button 
-      onClick={()=>handelAddWantToCook()}
+      onClick={()=>handelAddWantToCook(card)}
       className="bg-green-300 hover:bg-green-400 text-white rounded-full p-4 mt-4 w-full">
         Want to Cook
       </button>
@@ -52,7 +52,9 @@ Card.propTypes = {
     ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
     preparing_time: PropTypes.number.isRequired,
     calories: PropTypes.number.isRequired,
+    
   }).isRequired,
+  handelAddWantToCook:PropTypes.func.isRequired,
 };
 
 export default Card;

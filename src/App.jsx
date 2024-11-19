@@ -11,9 +11,11 @@ function App() {
 
 
   const  [wantToCooks,setWantToCooks] =useState([]);
+
   const handelAddWantToCook = (card) =>{
 
-    console.log('bookmark ading soon',card)
+    const newWantToCooks=[...wantToCooks,card]
+    setWantToCooks(newWantToCooks)
   }
   return (
     <>
@@ -24,9 +26,11 @@ function App() {
         <Banner />
         <Recipes></Recipes>
 
-        <div className='md:flex'>
+        <div className='md:flex  gap-5'>
           <Cards handelAddWantToCook={handelAddWantToCook}></Cards>
-          <CountArea></CountArea>
+          <CountArea
+          wantToCooks={wantToCooks}
+          ></CountArea>
         </div>
         
        
