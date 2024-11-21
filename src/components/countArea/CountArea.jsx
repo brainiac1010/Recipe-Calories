@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Cooking from "../cooking/Cooking";
 
-const CountArea = ({ wantToCooks }) => {
+const CountArea = ({ wantToCooks, handleStartCooking }) => {
   return (
     <div className="md:w-1/3 text-center border p-4 rounded-lg shadow-lg">
       <h2 className="font-semibold text-[24px]">
@@ -27,8 +27,10 @@ const CountArea = ({ wantToCooks }) => {
               <td className="p-2">{item.preparing_time} minutes</td>
               <td className="p-2">{item.calories} calories</td>
               <td className="p-2">
-                <button className="bg-green-500 text-white px-2 py-1 rounded-full text-sm">
-                   Preparing
+                <button
+                onClick={() => handleStartCooking(item)}
+                className="bg-green-500 text-white px-2 py-1 rounded-full text-sm">
+                Preparing
                 </button>
               </td>
             </tr>

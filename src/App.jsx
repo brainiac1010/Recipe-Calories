@@ -6,11 +6,23 @@ import Recipes from './components/Our Recipes/Recipes';
 import Cards from './components/Recepie-cards/Cards';
 import CountArea from './components/countArea/countArea';
 import { useState } from 'react';
+import Cooking from './components/cooking/Cooking';
 
 function App() {
 
 
   const  [wantToCooks,setWantToCooks] =useState([]);
+  const [currentlyCooking, setCurrentlyCooking] = useState([]);
+
+
+
+  const handleStartCooking = (recipe) => {
+    setWantToCooks(wantToCooks.filter(item => item !== recipe));
+    
+    setCurrentlyCooking([...currentlyCooking, recipe]);
+  };
+
+
 
   const handelAddWantToCook = (card) =>{
 
@@ -30,10 +42,12 @@ function App() {
           <Cards handelAddWantToCook={handelAddWantToCook}></Cards>
           <CountArea
           wantToCooks={wantToCooks}
+          handleStartCooking={handleStartCooking}
           ></CountArea>
         </div>
         
-       
+       <Cooking currentlyCooking={currentlyCooking}
+       ></Cooking>
         
       </Container>
     </>
