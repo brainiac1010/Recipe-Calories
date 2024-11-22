@@ -43,12 +43,11 @@ function App() {
           <CountArea
           wantToCooks={wantToCooks}
           handleStartCooking={handleStartCooking}
+          currentlyCooking={currentlyCooking}
           ></CountArea>
         </div>
         
-       <Cooking currentlyCooking={currentlyCooking}
-       ></Cooking>
-        
+      
       </Container>
     </>
   );

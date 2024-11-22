@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Cooking from "../cooking/Cooking";
 
-const CountArea = ({ wantToCooks, handleStartCooking }) => {
+const CountArea = ({ wantToCooks, handleStartCooking,currentlyCooking }) => {
   return (
     <div className="md:w-1/3 text-center border p-4 rounded-lg shadow-lg">
       <h2 className="font-semibold text-[24px]">
@@ -37,7 +37,9 @@ const CountArea = ({ wantToCooks, handleStartCooking }) => {
           ))}
         </tbody>
       </table>
-      <Cooking></Cooking>
+      <Cooking 
+      currentlyCooking={currentlyCooking}
+      ></Cooking>
     </div>
   );
 };
