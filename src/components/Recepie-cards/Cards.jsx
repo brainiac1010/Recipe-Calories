@@ -14,15 +14,11 @@ const Cards = ({ handelAddWantToCook }) => {
 
   return (
     <div className="md:w-2/3 mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pl-2">
-        {cards.map((card, index) => (
-          <Card
-            key={card.id || `card-${index}`} 
-            card={card}
-            handelAddWantToCook={handelAddWantToCook}
-          />
-        ))}
-      </div>
+     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pl-2">
+  {cards.map((card, index) => (
+    <Card key={card.id || `card-${index}`} card={card} handelAddWantToCook={handelAddWantToCook} />
+  ))}
+</div>
     </div>
   );
 };

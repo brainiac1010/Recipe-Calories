@@ -6,7 +6,7 @@ import Recipes from './components/Our Recipes/Recipes';
 import Cards from './components/Recepie-cards/Cards';
 import CountArea from './components/countArea/countArea';
 import { useState } from 'react';
-import Cooking from './components/cooking/Cooking';
+
 
 function App() {
 

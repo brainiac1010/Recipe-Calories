@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Cooking = ({ currentlyCooking }) => {
-    // Calculate total time and total calories
+    
     const totalTime = currentlyCooking.reduce((sum, item) => sum + item.preparing_time, 0);
     const totalCalories = currentlyCooking.reduce((sum, item) => sum + item.calories, 0);
 
@@ -9,6 +9,8 @@ const Cooking = ({ currentlyCooking }) => {
         <div className="mt-10">
             <h2 className="font-semibold text-[24px]">Currently cooking:</h2>
             <hr />
+
+            <div className='overflow-x-auto'>
             <table className="table-auto w-full border-collapse mt-4">
                 <thead>
                     <tr className="border-b">
@@ -30,8 +32,10 @@ const Cooking = ({ currentlyCooking }) => {
                     ))}
                 </tbody>
             </table>
+            </div>
+            
 
-            {/* Total Section */}
+            
             <div className="mt-6 p-4 border rounded-lg bg-gray-100">
                 <h3 className="font-semibold text-[20px]">Totals:</h3>
                 <p className="mt-2 text-[16px]">Total Time: <span className="font-bold">{totalTime} minutes</span></p>
